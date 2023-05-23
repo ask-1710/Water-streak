@@ -1,0 +1,21 @@
+{
+    "name": "Drink Water Popup",
+    "description": "Demonstrates usage and features of the event page by reminding user to drink water",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+      "alarms",
+      "notifications",
+      "storage"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_title": "Drink Water",
+      "default_popup": "popup.html"
+    },
+    "icons": {
+      "128": "resources/drink_water128.png"
+    }
+  }

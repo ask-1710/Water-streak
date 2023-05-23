@@ -1,0 +1,52 @@
+<!-- Copyright 2017 The Chromium Authors. All rights reserved.
+Use of this source code is governed by a BSD-style license that can be
+found in the LICENSE file. -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Water Popup</title>
+    <style>
+      body {
+        text-align: center;
+      }
+
+      #hydrateImage {
+        width: 100px;
+        margin: 5px;
+      }
+
+      button {
+        margin: 5px;
+        outline: none;
+      }
+
+    </style>
+    <!--
+      - JavaScript and HTML must be in separate files
+     -->
+  </head>
+  <body>
+    <img src="resources/drink_water128.png" id="hydrateImage" />
+    <h3>Water streak is what we call it!</h3>
+    <!-- An Alarm delay of less than the minimum 1 minute will fire
+      in approximately 1 minute increments if released --><br/>
+    How much water will to consume in every round of your streak (in ml)
+    <input
+        id="setWaterQuanPerRound"
+    type="text"
+    name="waterQuanPerRoundInML"
+    >   
+    What's the gap inbetween two rounds (in minutes)
+    <input
+    id="roundPeriod"
+    type="text"
+    name="roundPeriod"
+    >
+
+    <!-- <button id="sampleMinute" value="1">Check Alarm</button> -->
+    <button id="setAlarm">Start Streak</button>
+    
+    <button id="cancelAlarm">Stop Streak</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
